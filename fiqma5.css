@@ -91,14 +91,3 @@ nav .bars{
     fill: aliceblue;
     display: none;
 }
-@media (max-width:768px) {
-    header .links{
-       display: none;
-   }
-   nav .bars{
-       display: block;
-   }
-   header .title{
-       width: 80%;
-   }
-}
