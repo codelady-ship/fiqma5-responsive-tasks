@@ -61,8 +61,8 @@ nav .links .active::after{
     width: 60%;
 }
 header{ color:rgb(249, 250, 252);}
-header .subtitle,header .title{
-    color: rgb(234, 231, 240);
+header .subtitle{
+    color: black;
 }
 header .subtitle{
     font-size: 0.8rem;
@@ -71,7 +71,9 @@ header .title{
     margin: 2rem 0;
     font-size: larger;
     width: 38%;
+    color: rgb(234, 231, 240);
 }
+
 header .CONTACT{
     color: aliceblue;
     padding: 0.8rem 0.6rem ;
@@ -83,4 +85,20 @@ header .CONTACT{
 }
 header .CONTACT:hover{
     background-color: transparent;
+}
+nav .bars{
+    cursor: pointer;
+    fill: aliceblue;
+    display: none;
+}
+@media (max-width:768px) {
+    header .links{
+       display: none;
+   }
+   nav .bars{
+       display: block;
+   }
+   header .title{
+       width: 80%;
+   }
 }
