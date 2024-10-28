@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@font-face {
+    font-family: opensans;
+    src: url(./font-family/static/OpenSans-Regular.ttf);
+}
+html{
+    font-size: calc(8px+1vw);
+    font-family: Opensans;
+}
+header{
+    background: url("./foto/bg.png") center no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.container{
+    max-width: 90vw;
+    margin: auto;
+}
+nav{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .links{
+    display: flex;
+   gap: 20px;
+}
+nav .links a{
+ color: azure;
+ font-size: 1rem;
+ position: relative;
+ transition: 0.3s;
+}
+nav .links a::after{
+    counter: "";
+    width: 0%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: azure;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+nav .links a:hover::after{
+    width: 60%;
+}
+nav .links .active{
+   color: antiquewhite;
+}
+nav .links .active::after{
+    width: 60%;
+}
+header{ color:rgb(249, 250, 252);}
+header .subtitle,header .title{
+    color: rgb(234, 231, 240);
+}
+header .subtitle{
+    font-size: 0.8rem;
+}
+header .title{
+    margin: 2rem 0;
+    font-size: larger;
+    width: 38%;
+}
+header .CONTACT{
+    color: aliceblue;
+    padding: 0.8rem 0.6rem ;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: rgb(14, 104, 59);
+    border: 1px solid rgb(14, 104, 59);
+    box-shadow: 0 0 3px rgb(36, 212, 124);
+}
+header .CONTACT:hover{
+    background-color: transparent;
+}
